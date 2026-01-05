@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="icon" href="couple logo.png" type="image/png" />
+    <link rel="stylesheet" href="gallery.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-light navbar-expand-lg bg-custom sticky-top">
+      <div class="container-xxl">
+        <div class="navbar-brand">
+          <span class="fw-bold text-light">
+            <i class="bi bi-bookmark-heart-fill"></i>Our Story</span
+          >
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+        >
+          <span class="navbar-toggler-icon"> </span>
+        </button>
+
+        <!-- navbar links -->
+        <div
+          class="collapse navbar-collapse justify-content-end align-center"
+          id="main-nav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#Home" class="nav-link text-light">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Gallery" class="nav-link text-light">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Memories" class="nav-link text-light">Memories</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Promises" class="nav-link text-light">Promises</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header id="Home">
+      <section class="intro">
+        <div class="container-lg">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-md-8 text-center text-md-center">
+              <h1>
+                <div class="display-2 fw-bold">
+                  The Chapter Called Beyond Us
+                </div>
+              </h1>
+              <p class="lead my-4 text-light">
+                A collection of moments that built our story, strengthened our
+                bond, and made us who we are today.
+              </p>
+              <a href="#Memories" class="btn btn-light btn-outline-info"
+                >Memories</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="carousel" id="Gallery">
+        <div class="group">
+          <div class="card"><img src="carouselpics/pic1.jpg" alt="" /></div>
+          <div class="card"><img src="carouselpics/pic2.jpg" alt="" /></div>
+          <div class="card"><img src="carouselpics/pic3.jpg" alt="" /></div>
+          <div class="card"><img src="carouselpics/pic4.jpg" alt="" /></div>
+          <div class="card"><img src="carouselpics/pic5.jpg" alt="" /></div>
+          <div class="card"><img src="carouselpics/pic6.jpg" alt="" /></div>
+          <div class="card"><img src="carouselpics/pic7.jpg" alt="" /></div>
+          <div class="card"><img src="carouselpics/pic8.jpg" alt="" /></div>
+          <div class="card"><img src="carouselpics/pic9.jpg" alt="" /></div>
+        </div>
+
+        <div aria-hidden class="group">
+          <div class="card"><img src="carouselpics/pic10.jpg" alt="" /></div>
+          <div class="card"><img src="carouselpics/pic11.jpg" alt="" /></div>
+          <div class="card"><img src="carouselpics/pic12.jpg" alt="" /></div>
+          <div class="card"><img src="carouselpics/pic13.jpg" alt="" /></div>
+          <div class="card"><img src="carouselpics/pic14.jpg" alt="" /></div>
+          <div class="card"><img src="carouselpics/pic15.jpg" alt="" /></div>
+          <div class="card"><img src="carouselpics/pic16.jpg" alt="" /></div>
+          <div class="card"><img src="carouselpics/pic17.jpg" alt="" /></div>
+          <div class="card"><img src="carouselpics/pic18.jpg" alt="" /></div>
+        </div>
+      </div>
+    </header>
+    <div class="hero">
+      <div class="container-fluid">
+        <h1 class="text-center text-memories">
+          <div class="display-5">Our Memories</div>
+          <p class="lead">A collection of memorable moments spent together.</p>
+        </h1>
+
+        <section id="Memories">
+          <div class="overlay" onclick="closeAll()"></div>
+          <div class="container ps-2">
+            <!-- ROW 1 -->
+            <div class="row g-4">
+              <div class="col-lg-4 col-md-6">
+                <h5 class="mb-2">10 May 2024</h5>
+                <div class="card-holder">
+                  <div class="card" onclick="toggleCard(this)">
+                    <h3>Click to View Our Moments</h3>
+                    <div class="expanded-content">
+                      <p>Our First Date.</p>
+                      <img src="cardpics/pic1.jpg" width="200" height="150" />
+                      <img src="cardpics/pic2.jpg" width="200" height="150" />
+                      <img src="cardpics/pic3.jpg" width="200" height="150" />
+                      <img src="cardpics/pic4.jpg" width="200" height="150" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <h5 class="mb-2">14 Oct 2024 and 26 Oct 2024</h5>
+                <div class="card-holder">
+                  <div class="card" onclick="toggleCard(this)">
+                    <h3>Click to View Our Moments</h3>
+                    <div class="expanded-content">
+                      <p>The Day We Got Closer to Each Other.</p>
+                      <img src="cardpics/pic33.jpg" width="200" height="auto" />
+                      <img src="cardpics/pic11.jpg" width="200" height="auto" />
+                      <img src="cardpics/pic22.jpg" width="200" height="150" />
+
+                      <img src="cardpics/pic44.jpg" width="200" height="150" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <h5 class="mb-2">13 Dec 2024</h5>
+                <div class="card-holder">
+                  <div class="card" onclick="toggleCard(this)">
+                    <h3>Click to View Our Moments</h3>
+                    <div class="expanded-content">
+                      <p>Our Ninth Month Together.</p>
+                      <img src="cardpics/pic111.jpg" width="200" height="150" />
+                      <img src="cardpics/pic222.jpg" width="200" height="150" />
+                      <img
+                        src="cardpics/pic333.jpg"
+                        width="200"
+                        height="auto"
+                      />
+                      <img src="cardpics/pic444.jpg" width="200" height="150" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ROW 2 (UNCHANGED CONTENT) -->
+            <div class="row g-4 mt-1">
+              <div class="col-lg-4 col-md-6">
+                <h5 class="mb-2">5 Jan 2025</h5>
+                <div class="card-holder">
+                  <div class="card" onclick="toggleCard(this)">
+                    <h3>Click to View Our Moments</h3>
+                    <div class="expanded-content">
+                      <p>Turning 18 with Him.</p>
+                      <img src="cardpics1/pic1.jpg" width="200" height="150" />
+                      <img src="cardpics1/pic2.jpg" width="200" height="150" />
+                      <img src="cardpics1/pic3.jpg" width="200" height="150" />
+                      <img src="cardpics1/pic4.jpg" width="200" height="150" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <h5 class="mb-2">22 Dec 2025</h5>
+                <div class="card-holder">
+                  <div class="card" onclick="toggleCard(this)">
+                    <h3>Click to View Our Moments</h3>
+                    <div class="expanded-content">
+                      <p>
+                        Our First Date Far from Our Province – SM La Union City
+                      </p>
+
+                      <img
+                        src="cardpics1/pic22.jpg"
+                        width="200"
+                        height="auto"
+                      />
+                      <img
+                        src="cardpics1/pic44.jpg"
+                        width="200"
+                        height="auto"
+                      />
+                      <img
+                        src="cardpics1/pic11.jpg"
+                        width="200"
+                        height="auto"
+                      />
+                      <img
+                        src="cardpics1/pic33.jpg"
+                        width="200"
+                        height="auto"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <h5 class="mb-2">28 Dec 2025</h5>
+                <div class="card-holder">
+                  <div class="card" onclick="toggleCard(this)">
+                    <h3>Click to View Our Moments</h3>
+                    <div class="expanded-content">
+                      <p>Spending Quality Time Together in Tagudin</p>
+                      <img
+                        src="cardpics1/pic111.jpg"
+                        width="200"
+                        height="150"
+                      />
+                      <img
+                        src="cardpics1/pic222.jpg"
+                        width="200"
+                        height="150"
+                      />
+                      <img
+                        src="cardpics1/pic333.jpg"
+                        width="200"
+                        height="150"
+                      />
+                      <img
+                        src="cardpics1/pic444.jpg"
+                        width="200"
+                        height="150"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!--footer-->
+    <footer>
+      <div class="container" id="Promises">
+        <h1 class="text-center h1-footer pt-5">
+          A Promise Between Us <span><i class="bi bi-hearts"></i></span>
+        </h1>
+        <hr />
+        <div class="row justify-content-center mt-5 mb-5 p-4">
+          <div class="col-lg-3 col-md-4 text-center">
+            <h5 class="h5-footer">
+              Unbreakable <span><i class="bi bi-suit-heart-fill"></i></span>
+            </h5>
+            <p class="p-footer">
+              A promise to stand together through every challenge.
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-4 text-center">
+            <h5 class="h5-footer">
+              Built on Trust <span><i class="bi bi-shield-check"></i></span>
+            </h5>
+            <p class="p-footer">
+              We choose honesty, faith, and understanding every day.
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-4 text-center">
+            <h5 class="h5-footer">
+              Promises made, promises kept forever.
+              <span><i class="bi bi-file-lock2"></i></span>
+            </h5>
+            <p class="p-footer">
+              Promises spoken with love, kept forever and always.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div style="background-color: #f64dee">
+        <hr />
+        <p class="text-center pb-3" style="color: rgb(250, 177, 234)">
+          Love turns our promises into forever commitments.
+          <span><i class="bi bi-bag-heart"></i></span>
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      function toggleCard(card) {
+        closeAll();
+        card.classList.add('expanded');
+        document.querySelector('.overlay').classList.add('show');
+      }
+
+      function closeAll() {
+        document
+          .querySelectorAll('.card')
+          .forEach((c) => c.classList.remove('expanded'));
+        document.querySelector('.overlay').classList.remove('show');
+      }
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,191 @@
+header {
+  border: 2px solid rgb(176, 211, 250);
+  background: linear-gradient(to top, rgb(176, 211, 250), #e487e0);
+}
+.bg-custom {
+  background-color: #f875aa;
+}
+.intro {
+  margin: 80px;
+}
+.display-2 {
+  color: white;
+  text-shadow: 2px 2px 1px #f875aa;
+  font-family: Arial;
+  word-spacing: 18px;
+  letter-spacing: 5px;
+}
+a.nav-link:hover {
+  color: #0294fd !important;
+}
+.carousel {
+  margin: 100px auto; /*100px top and bottom margins, auto left and right margins*/
+  width: 100%;
+  border-radius: 10px;
+  display: flex; /*Makes the carousel a flex container, so its child elements (like .group) are aligned in a row.*/
+  overflow-x: auto; /*Allows horizontal scrolling when the content is wider than the container.*/
+  gap: 1em; /*Adds space between child elements*/
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.group {
+  display: flex; /*Makes the group’s items (like .card) line up horizontally.*/
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  animation: spin 9s infinite linear;
+  padding-right: 1em;
+}
+.group .card {
+  flex: 0 0 10em; /* width (was 5em) */
+  height: 10em; /* height (was 5em) */
+  padding: 0;
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+
+/* image inside card */
+.group .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes spin {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: -100%;
+  }
+}
+#Memories {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: rgba(155, 196, 246, 0.258);
+  border-radius: 10px;
+}
+
+.hero {
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.container-fluid {
+  background-color: rgba(171, 207, 252, 0.285);
+}
+
+/* 🔒 keeps grid fixed */
+.card-holder {
+  position: relative;
+  height: 280px;
+}
+
+.card-holder .card {
+  border: 3px solid #ffc4de;
+  border-radius: 8px;
+  padding: 50px;
+  cursor: pointer;
+  background-color: hsl(325, 58%, 94%);
+  width: 350px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card:hover {
+  box-shadow: 2px 2px 8px rgba(221, 7, 121, 0.212);
+}
+
+/* 🚀 floating expanded card */
+.card.expanded {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.15);
+  width: 600px;
+  background-color: #fff;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+  z-index: 1050;
+}
+
+.expanded-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.3s ease;
+}
+
+.card.expanded .expanded-content {
+  max-height: 500px;
+  opacity: 1;
+}
+
+/* dark background */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+  z-index: 1040;
+}
+
+.overlay.show {
+  display: block;
+}
+
+h3 {
+  font-family: Roboto;
+  font-size: 23px !important;
+  text-align: center;
+  color: rgb(247, 91, 117);
+}
+p {
+  text-align: center;
+  color: #fa7cb3;
+}
+.text-memories {
+  color: white;
+  text-shadow: 2px 2px 1px #f875aa;
+  margin-bottom: 90px !important;
+  background: linear-gradient(
+    to right,
+    rgb(176, 211, 250) 0%,
+    #4775f499 40%,
+    rgb(176, 211, 250) 100%
+  );
+
+  padding: 20px;
+}
+
+p.lead {
+  color: white;
+  text-shadow: none;
+  font-size: 20px;
+}
+h5 {
+  color: #f875aa;
+  font-size: 15px !important;
+  font-weight: bolder !important;
+}
+footer {
+  font-family: Roboto;
+  background: linear-gradient(to bottom, rgb(176, 211, 250), #e487e0 50%);
+}
+.h1-footer {
+  color: white;
+}
+hr {
+  color: white !important;
+}
+.p-footer {
+  color: white;
+  word-spacing: 3px;
+  padding-top: 5px;
+}
+.h5-footer {
+  color: white;
+  letter-spacing: 2px;
+}
